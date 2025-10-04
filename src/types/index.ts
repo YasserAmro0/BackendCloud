@@ -1,0 +1,1 @@
+// Mirror Sakina types index structure if needed; leave as is for now
