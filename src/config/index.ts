@@ -22,6 +22,11 @@ interface ICONFIG {
   MAILER: {
     [key: string]: string | undefined
   }
+  EMAIL_USER: string | undefined,
+  EMAIL_PASSWORD: string | undefined,
+  PRODUCT_NAME: string | undefined,
+  PRODUCT_LINK: string | undefined,
+  PRODUCT_LOGO: string | undefined,
   CLIENT_SECRET: string | undefined,
   CLIENT_ID: string | undefined,
   REFRESH_TOKEN: Credentials | undefined | string,
@@ -70,6 +75,11 @@ const config: ICONFIG = {
     user: MAILERUSER,
     pass: MAILERPASS,
   },
+  EMAIL_USER: MAILERUSER,
+  EMAIL_PASSWORD: MAILERPASS,
+  PRODUCT_NAME: PRODUCTNAME || 'TherapyConnect',
+  PRODUCT_LINK: PRODUCTLINK || FRONT_END_URL || 'http://localhost:3000',
+  PRODUCT_LOGO: 'https://via.placeholder.com/150x50/22BC66/FFFFFF?text=TherapyConnect',
   TOKEN_TEST_THERAPIST,
   API_KEY,
   AWS_ACCESS_KEY_ID,
