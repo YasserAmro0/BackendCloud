@@ -2,7 +2,6 @@ import bookAppointment from './session';
 import { getAdmin, getTherapists, patchTherapist } from './admin';
 import createPresignedUrl from './S3Service';
 import mailer from './nodemailer';
-import generateEmail from './mailBuilder';
 
 export {
   getTherapistById, getAllTherapist, getAppointmentsPerDateService, getAppointmentById
