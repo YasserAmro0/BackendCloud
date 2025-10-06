@@ -19,4 +19,8 @@ const generateMail = ({ theme, body }:IMailBuilder) => {
   return { emailBody, emailText };
 };
 
+// Alias for backward compatibility
+const generateEmail = generateMail;
+
+export { generateEmail, generateMail };
 export default generateMail;
