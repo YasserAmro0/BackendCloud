@@ -11,7 +11,7 @@ const createSessionController = async (
 ) => {
   try {
     const { appointmentId } = req.body;
-
+    
     if (!appointmentId) {
       return res.status(400).json({
         message: 'Appointment ID is required',
@@ -19,7 +19,7 @@ const createSessionController = async (
     }
 
     const appointment = await bookAppointment(appointmentId);
-
+    
     return res.status(201).json({
       data: appointment,
       message: 'Session created successfully',
