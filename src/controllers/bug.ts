@@ -112,7 +112,7 @@ const getContributors = async (req: Request, res: Response, next: NextFunction) 
     };
 
     const { data } = await axios.get(
-      'https://api.github.com/repos/YasserAmro0/SW_FrontEnd_Group2/contributors',
+      'https://api.github.com/repos/YasserAmro0/BackendCloud/contributors',
       requestOption,
     );
     const contributors = data.map((contributor:{ login:string; }) => contributor.login);
