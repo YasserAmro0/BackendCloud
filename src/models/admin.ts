@@ -8,14 +8,13 @@ const Admin = sequelize.define<AdminAttributes>('admin', {
     autoIncrement: true,
     primaryKey: true,
   },
-  email: {
+  role: {
     type: DataTypes.STRING,
     allowNull: false,
-    unique: true,
   },
-  isActive: {
-    type: DataTypes.BOOLEAN,
-    defaultValue: true,
+  username: {
+    type: DataTypes.STRING,
+    allowNull: false,
   },
   password: {
     type: DataTypes.STRING,

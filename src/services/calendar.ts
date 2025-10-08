@@ -91,14 +91,4 @@ const generateMeeting = async ({
   return res.data;
 };
 
-const getClientSecret = async () => {
-  // This is a placeholder for calendar-related client secret functionality
-  // You may need to implement specific calendar authentication logic here
-  return {
-    clientSecret: CLIENT_SECRET,
-    clientId: CLIENT_ID,
-  };
-};
-
-export { generateMeeting, getClientSecret };
 export default generateMeeting;

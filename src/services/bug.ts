@@ -61,7 +61,7 @@ const addBugToGithub = async (id:number, assignedTo:string) => {
   }
   if (!bug) throw templateErrors.NOT_FOUND('Bug not found');
   await axios.post(
-    'https://api.github.com/repos/YasserAmro0/BackendCloud/issues',
+    'https://api.github.com/repos/GSG-G13/ntherapy-express/issues',
     {
       title: bug.title,
       body: bug.description,

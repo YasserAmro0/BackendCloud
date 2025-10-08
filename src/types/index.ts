@@ -14,16 +14,12 @@ import {
   Decode, RequestWithUserRole, RolesForSelect, Roles,
 } from './checkauth';
 import IMailBuilder from './mail';
+import { IGetAllBugs, Bug } from './bug';
 
-// Export types
-export type {
+export {
   UsersAttributes, TherapistAttributes, AppointmentsAttributes, AdminAttributes, SessionsAttributes,
-  TherapistWithUserOptional, Decode, RequestWithUserRole, Roles, Imeeting, IPayload,
+  TherapistWithUserOptional, Decode, RequestWithUserRole, RolesForSelect, Roles, Imeeting, IPayload,
   Appointment, TimeRange, Payload, AddAppointment, AppointmentWithTherapistOptional,
   TherapistAndUser, ITherapist, IUser, IMailBuilder, PriceFilter,
-};
-
-// Export values (enums, etc.)
-export {
-  RolesForSelect,
+  IGetAllBugs, Bug,
 };

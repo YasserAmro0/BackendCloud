@@ -2,7 +2,7 @@ import Mailgen from 'mailgen';
 import { IMailBuilder } from '../types';
 import config from '../config';
 
-const generateMail = ({ theme, body }:IMailBuilder) => {
+const generateMail = ({ theme, body }: IMailBuilder) => {
   const mailGenerator = new Mailgen({
     theme: theme || config.THEME as string || 'salted',
     product: {
@@ -19,8 +19,4 @@ const generateMail = ({ theme, body }:IMailBuilder) => {
   return { emailBody, emailText };
 };
 
-// Alias for backward compatibility
-const generateEmail = generateMail;
-
-export { generateEmail, generateMail };
 export default generateMail;

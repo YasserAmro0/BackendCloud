@@ -3,6 +3,7 @@ import Admin from './admin';
 import Therapist from './therapist';
 import Appointment from './appointment';
 import Session from './session';
+import Bug from './bug';
 
 User.hasOne(Therapist);
 Therapist.belongsTo(User);
@@ -18,4 +19,5 @@ User.hasMany(Session);
 
 export {
   User, Therapist, Appointment, Admin, Session,
+  Bug,
 };
